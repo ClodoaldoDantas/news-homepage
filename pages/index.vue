@@ -8,6 +8,10 @@
     <section class="content">
       <article class="main-article">
         <picture class="main-article__picture">
+          <source
+            srcset="/images/image-web-3-desktop.jpg"
+            media="(min-width: 768px)"
+          />
           <img src="/images/image-web-3-mobile.jpg" alt="Web 3.0" />
         </picture>
 
@@ -29,12 +33,12 @@
 
         <ul class="new-posts__list">
           <li class="new-posts__item">
-            <h3>Hydrogen VS Electric Cars</h3>
+            <a href="#">Hydrogen VS Electric Cars</a>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </li>
 
           <li class="new-posts__item">
-            <h3>The Downsides of AI Artistry</h3>
+            <a href="#">The Downsides of AI Artistry</a>
             <p>
               What are the possible adverse effects of on-demand AI image
               generation?
@@ -42,7 +46,7 @@
           </li>
 
           <li class="new-posts__item">
-            <h3>Is VC Funding Drying Up?</h3>
+            <a href="#">Is VC Funding Drying Up?</a>
             <p>
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
@@ -59,7 +63,7 @@
         </figure>
 
         <div data-ranking="01" class="popular-post__content">
-          <h4>Reviving Retro PCs</h4>
+          <a href="#">Reviving Retro PCs</a>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
@@ -70,7 +74,7 @@
         </figure>
 
         <div data-ranking="02" class="popular-post__content">
-          <h4>Top 10 Laptops of 2022</h4>
+          <a href="#">Top 10 Laptops of 2022</a>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
@@ -81,7 +85,7 @@
         </figure>
 
         <div data-ranking="03" class="popular-post__content">
-          <h4>The Growth of Gaming</h4>
+          <a href="#">The Growth of Gaming</a>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
@@ -153,11 +157,20 @@
   }
 
   &__item {
-    h3 {
+    a {
       font-size: 1.25rem;
+      font-weight: 800;
       line-height: 1.5rem;
       color: var(--off-white);
+
+      display: inline-block;
       margin-bottom: 0.5rem;
+
+      transition: color 200ms;
+
+      &:hover {
+        color: var(--soft-orange);
+      }
     }
 
     p {
@@ -205,10 +218,20 @@
       color: var(--grayish-blue);
     }
 
-    h4 {
+    a {
       font-size: 1.125rem;
+      font-weight: 800;
       line-height: 1.5rem;
+      color: var(--very-dark-blue);
+
+      display: inline-block;
       margin-bottom: 0.5rem;
+
+      transition: color 200ms;
+
+      &:hover {
+        color: var(--soft-red);
+      }
     }
 
     p {
