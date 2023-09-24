@@ -57,7 +57,7 @@
     </section>
 
     <section class="popular-posts">
-      <div class="popular-post">
+      <article class="popular-post">
         <figure class="popular-post__image">
           <img src="/images/image-retro-pcs.jpg" alt="Retro PC" />
         </figure>
@@ -66,9 +66,9 @@
           <a href="#">Reviving Retro PCs</a>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
-      </div>
+      </article>
 
-      <div class="popular-post">
+      <article class="popular-post">
         <figure class="popular-post__image">
           <img src="/images/image-top-laptops.jpg" alt="Mechanical Keyboard" />
         </figure>
@@ -77,9 +77,9 @@
           <a href="#">Top 10 Laptops of 2022</a>
           <p>Our best picks for various needs and budgets.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="popular-post">
+      <article class="popular-post">
         <figure class="popular-post__image">
           <img src="/images/image-gaming-growth.jpg" alt="Game Controller" />
         </figure>
@@ -88,27 +88,50 @@
           <a href="#">The Growth of Gaming</a>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
+@use '~/assets/styles/media-query.scss' as media;
+
 .content {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @include media.query(lg) {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
 .main-article {
+  @include media.query(xl) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 2rem;
+  }
+
   &__title {
     margin: 1.5rem 0 1rem;
     font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
     line-height: 1;
+
+    @include media.query(xl) {
+      margin: 0;
+    }
   }
 
-  &__picture img {
-    margin: 0 auto;
+  &__picture {
+    @include media.query(xl) {
+      grid-column: 1 / 3;
+    }
+
+    img {
+      margin: 0 auto;
+    }
   }
 
   &__content {
@@ -142,6 +165,10 @@
 .new-posts {
   padding: 1.5rem 1.25rem;
   background-color: var(--very-dark-blue);
+
+  @include media.query(lg) {
+    flex: 0 0 350px;
+  }
 
   &__title {
     font-size: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
@@ -187,6 +214,11 @@
 
   display: grid;
   gap: 2rem;
+
+  @include media.query(xl) {
+    padding-top: 4.375rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .popular-post {

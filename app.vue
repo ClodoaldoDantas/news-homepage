@@ -1,4 +1,7 @@
 <template>
-  <AppHeader />
+  <ClientOnly>
+    <AppHeader />
+  </ClientOnly>
+
   <NuxtPage />
 </template>
