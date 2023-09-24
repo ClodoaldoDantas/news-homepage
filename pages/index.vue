@@ -168,6 +168,7 @@
 
   @include media.query(lg) {
     flex: 0 0 350px;
+    padding: 2rem 1.5rem;
   }
 
   &__title {
