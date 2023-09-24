@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+# News Homepage
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+🏆 Frontend Mentor Challenge
 
-## Setup
+Caso queira ver o link do desafio acesse [aqui](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) 
 
-Make sure to install the dependencies:
+![preview](https://github.com/ClodoaldoDantas/news-homepage/assets/32376905/071e0905-4841-45d3-ba99-fd7e60d6a223)
 
-```bash
-# npm
-npm install
+## 💻 Como executar o projeto
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Certifique-se de ter o Node instalado na sua máquina.
+2. Clone o repositório.
+3. Navegue até o diretório raiz do projeto.
+4. Execute o comando `npm install` para instalar as dependências do projeto.
+5. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento.
